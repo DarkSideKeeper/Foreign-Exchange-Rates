@@ -14,24 +14,52 @@ class MainViewController: UIViewController, MainViewProtocol {
 
 	var presenter: MainPresenterProtocol?
 
+    @IBOutlet var navigationBar: UINavigationBar!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var btnConvert: UIButton!
     
+    var listRate: [ExchangeRatesModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupView()
     }
     
     func setupView() {
+        navigationBar.topItem?.title = "Text_Main_Title".localized
+        
         tableView.register(UINib(nibName: ExchangeRateCell.nibName, bundle: nil), forCellReuseIdentifier: ExchangeRateCell.identifier)
         tableView.tableFooterView = UIView()
     }
     
-    @IBAction func clickBtnConvert(_ sender: Any) {
-        
+    func updateView() {
+        setupView()
+        tableView.reloadData()
     }
     
+    func showListExchangeRates(model: [ExchangeRatesModel]) {
+        listRate = model
+    }
+    
+    @IBAction func clickBtnConvert(_ sender: Any) {
+        presenter?.showConvertView()
+    }
+    
+    @IBAction func clickChangeLanguage(_ sender: UIButton) {
+        if GBM.shared.getLanguage() == .en {
+            sender.setImage(UIImage(named: "icon_th"), for: .normal)
+            GBM.shared.setLanguage(language: .th)
+        } else {
+            sender.setImage(UIImage(named: "icon_us"), for: .normal)
+            GBM.shared.setLanguage(language: .en)
+        }
+        updateView()
+    }
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
@@ -41,10 +69,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExchangeRateCell.identifier) as! ExchangeRateCell
-        cell.backgroundColor = .red
+        cell.imageIcon.backgroundColor = .red
         
         return cell
     }
-    
-    
 }

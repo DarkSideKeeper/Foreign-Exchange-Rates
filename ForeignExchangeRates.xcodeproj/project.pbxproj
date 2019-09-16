@@ -12,6 +12,10 @@
 		9C29C394232F6FF900939DB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C393232F6FF900939DB8 /* Constants.swift */; };
 		9C29C398232F723300939DB8 /* ExchangeRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C396232F723300939DB8 /* ExchangeRateCell.swift */; };
 		9C29C399232F723300939DB8 /* ExchangeRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C29C397232F723300939DB8 /* ExchangeRateCell.xib */; };
+		9C29C3F2232F86C300939DB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C29C3F4232F86C300939DB8 /* Localizable.strings */; };
+		9C29C3F8232F8AAE00939DB8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C3F7232F8AAE00939DB8 /* Extensions.swift */; };
+		9C29C3FA232F913000939DB8 /* GlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C3F9232F913000939DB8 /* GlobalMethod.swift */; };
+		9C29C3FD232F9BCB00939DB8 /* ExchangeRatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C3FC232F9BCB00939DB8 /* ExchangeRatesModel.swift */; };
 		9C2C50E3232F3639007794D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C50E2232F3639007794D9 /* AppDelegate.swift */; };
 		9C2C50EA232F363A007794D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C50E9232F363A007794D9 /* Assets.xcassets */; };
 		9C2C50ED232F363A007794D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C50EB232F363A007794D9 /* LaunchScreen.storyboard */; };
@@ -53,6 +57,11 @@
 		9C29C393232F6FF900939DB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9C29C396232F723300939DB8 /* ExchangeRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateCell.swift; sourceTree = "<group>"; };
 		9C29C397232F723300939DB8 /* ExchangeRateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRateCell.xib; sourceTree = "<group>"; };
+		9C29C3F3232F86C300939DB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9C29C3F5232F871100939DB8 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9C29C3F7232F8AAE00939DB8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9C29C3F9232F913000939DB8 /* GlobalMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMethod.swift; sourceTree = "<group>"; };
+		9C29C3FC232F9BCB00939DB8 /* ExchangeRatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesModel.swift; sourceTree = "<group>"; };
 		9C2C50DF232F3639007794D9 /* ForeignExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeignExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2C50E2232F3639007794D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C2C50E9232F363A007794D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				9C29C393232F6FF900939DB8 /* Constants.swift */,
+				9C29C3F7232F8AAE00939DB8 /* Extensions.swift */,
+				9C29C3F9232F913000939DB8 /* GlobalMethod.swift */,
+				9C29C3F4232F86C300939DB8 /* Localizable.strings */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -130,6 +142,14 @@
 				9C29C397232F723300939DB8 /* ExchangeRateCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9C29C3FB232F9B9C00939DB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C29C3FC232F9BCB00939DB8 /* ExchangeRatesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9C2C50D6232F3639007794D9 = {
@@ -158,6 +178,7 @@
 		9C2C50E1232F3639007794D9 /* ForeignExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
+				9C29C3FB232F9B9C00939DB8 /* Model */,
 				9C29C392232F6F9600939DB8 /* Config */,
 				9C2C5114232F4276007794D9 /* Module */,
 				9C2C50E2232F3639007794D9 /* AppDelegate.swift */,
@@ -311,6 +332,7 @@
 			knownRegions = (
 				en,
 				Base,
+				th,
 			);
 			mainGroup = 9C2C50D6232F3639007794D9;
 			productRefGroup = 9C2C50E0232F3639007794D9 /* Products */;
@@ -330,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2C50ED232F363A007794D9 /* LaunchScreen.storyboard in Resources */,
+				9C29C3F2232F86C300939DB8 /* Localizable.strings in Resources */,
 				9C2C50EA232F363A007794D9 /* Assets.xcassets in Resources */,
 				9C29C399232F723300939DB8 /* ExchangeRateCell.xib in Resources */,
 				9C2C5113232F3A11007794D9 /* Podfile in Resources */,
@@ -445,9 +468,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C29C398232F723300939DB8 /* ExchangeRateCell.swift in Sources */,
+				9C29C3F8232F8AAE00939DB8 /* Extensions.swift in Sources */,
 				9C2C50E3232F3639007794D9 /* AppDelegate.swift in Sources */,
 				9C2C511C232F429B007794D9 /* MainPresenter.swift in Sources */,
 				9C2C511D232F429B007794D9 /* MainRouter.swift in Sources */,
+				9C29C3FD232F9BCB00939DB8 /* ExchangeRatesModel.swift in Sources */,
+				9C29C3FA232F913000939DB8 /* GlobalMethod.swift in Sources */,
 				9C2C511F232F429B007794D9 /* MainProtocols.swift in Sources */,
 				9C29C394232F6FF900939DB8 /* Constants.swift in Sources */,
 				9C2C511E232F429B007794D9 /* MainViewController.swift in Sources */,
@@ -487,6 +513,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9C29C3F4232F86C300939DB8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C29C3F3232F86C300939DB8 /* en */,
+				9C29C3F5232F871100939DB8 /* th */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9C2C50EB232F363A007794D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -563,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

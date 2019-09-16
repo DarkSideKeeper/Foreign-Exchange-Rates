@@ -6,11 +6,9 @@
 //  Copyright © 2562 Titipan Sakunwongsalee. All rights reserved.
 //
 
-struct AppUrl {
+struct AppService {
     private struct Domains {
         static let Dev = "https://www.bangkokbank.com"
-        static let UAT = "https://www.bangkokbank.com"
-        static let Prod = "https://www.bangkokbank.com"
     }
     
     private  struct Routes {
@@ -21,7 +19,18 @@ struct AppUrl {
     private  static let Route = Routes.Api
     private  static let BaseURL = Domain + Route
     
-    static var ExchangeRateService: String {
-        return BaseURL  + "/exchangerateservice/Getfxrates/%@/%@/%@/1/th"
+    struct ExchangeRate {
+        var day: String
+        var Month: String
+        var year: String
+        
+        var url: String {
+            return BaseURL + "/exchangerateservice/Getfxrates/\(day)/\(Month)/\(year)/1/\(GBM.shared.getLanguage())"
+        }
     }
+}
+
+enum AppLanguage: String {
+    case th
+    case en
 }

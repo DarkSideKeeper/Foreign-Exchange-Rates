@@ -12,18 +12,22 @@ import Foundation
 
 //MARK: Wireframe -
 protocol MainWireframeProtocol: class {
-
+    func goToConvertView()
 }
 //MARK: Presenter -
 protocol MainPresenterProtocol: class {
 
     var interactor: MainInteractorInputProtocol? { get set }
+    
+    func showConvertView()
+    func getExchangeRates()
 }
 
 //MARK: Interactor -
 protocol MainInteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
+    func callApiExchangeRatesSuccess(model: [ExchangeRatesModel])
 }
 
 protocol MainInteractorInputProtocol: class {
@@ -31,6 +35,7 @@ protocol MainInteractorInputProtocol: class {
     var presenter: MainInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
+    func callApiExchangeRates()
 }
 
 //MARK: View -
@@ -39,4 +44,5 @@ protocol MainViewProtocol: class {
     var presenter: MainPresenterProtocol?  { get set }
 
     /* Presenter -> ViewController */
+    func showListExchangeRates(model: [ExchangeRatesModel])
 }

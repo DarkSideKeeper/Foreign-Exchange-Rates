@@ -13,4 +13,8 @@ import UIKit
 class MainInteractor: MainInteractorInputProtocol {
 
     weak var presenter: MainInteractorOutputProtocol?
+    
+    func callApiExchangeRates() {
+        presenter?.callApiExchangeRatesSuccess(model: [])
+    }
 }

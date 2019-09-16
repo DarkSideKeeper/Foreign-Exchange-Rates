@@ -10,7 +10,7 @@
 
 import UIKit
 
-class MainPresenter: MainPresenterProtocol, MainInteractorOutputProtocol {
+class MainPresenter: MainPresenterProtocol {
 
     weak private var view: MainViewProtocol?
     var interactor: MainInteractorInputProtocol?
@@ -22,4 +22,17 @@ class MainPresenter: MainPresenterProtocol, MainInteractorOutputProtocol {
         self.router = router
     }
 
+    func showConvertView() {
+        router.goToConvertView()
+    }
+    
+    func getExchangeRates() {
+        interactor?.callApiExchangeRates()
+    }
+}
+
+extension MainPresenter: MainInteractorOutputProtocol {
+    func callApiExchangeRatesSuccess(model: [ExchangeRatesModel]) {
+        view?.showListExchangeRates(model: model)
+    }
 }

@@ -12,7 +12,12 @@ class ExchangeRateCell: UITableViewCell {
     
     static let nibName = "ExchangeRateCell"
     static let identifier = "Cell"
-
+    
+    @IBOutlet var imageIcon: UIImageView!
+    @IBOutlet var lbName: UILabel!
+    @IBOutlet var lbBuyPrice: UILabel!
+    @IBOutlet var lbSellPrice: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
