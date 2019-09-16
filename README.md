@@ -11,3 +11,11 @@ Request Header & Key Value:
 Ocp-Apim-Subscription-Key: 7d1b09abe2ea413cbf95b2d99782ed37
 
 Response Format: JSON
+
+== iOS App Spec ==
+
+Language: Swift
+
+Dependency Management: Cocoapods
+
+Structural Design Patterns: VIPER
