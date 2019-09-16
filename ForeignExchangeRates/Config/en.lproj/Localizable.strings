@@ -6,3 +6,6 @@
   Copyright © 2562 Titipan Sakunwongsalee. All rights reserved.
 */
 "Text_Main_Title" = "Exchange-Rates";
+"Text_Currency" = "Currency";
+"Text_Buying" = "Buying Rates";
+"Text_Selling" = "Selling Rates";

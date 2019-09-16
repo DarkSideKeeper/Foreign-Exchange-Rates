@@ -9,12 +9,27 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainInteractor: MainInteractorInputProtocol {
 
     weak var presenter: MainInteractorOutputProtocol?
     
     func callApiExchangeRates() {
-        presenter?.callApiExchangeRatesSuccess(model: [])
+        let service = AppService.ExchangeRate(day: "16", month: "09", year: "2019")
+        let headers: HTTPHeaders = [
+            "Ocp-Apim-Subscription-Key": "7d1b09abe2ea413cbf95b2d99782ed37"
+        ]
+        
+        Alamofire.request(service.url, headers: headers).response { response in
+            guard let data = response.data else { return }
+            do {
+                let decoder = JSONDecoder()
+                let model = try decoder.decode(Array<ExchangeRatesModel>.self, from: data)
+                self.presenter?.callApiExchangeRatesSuccess(model: model)
+            } catch let error {
+                print(error)
+            }
+        }
     }
 }

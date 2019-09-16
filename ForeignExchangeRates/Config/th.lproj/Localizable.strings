@@ -6,3 +6,6 @@
   Copyright © 2562 Titipan Sakunwongsalee. All rights reserved.
 */
 "Text_Main_Title" = "อัตราแลกเปลี่ยน";
+"Text_Currency" = "สกุลเงิน";
+"Text_Buying" = "ราคารับซื้อ";
+"Text_Selling" = "ราคาขาย";

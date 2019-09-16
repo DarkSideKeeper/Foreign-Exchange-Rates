@@ -15,17 +15,17 @@ struct AppService {
         static let Api = "/api"
     }
     
-    private  static let Domain = Domains.Dev
-    private  static let Route = Routes.Api
-    private  static let BaseURL = Domain + Route
+    private static let Domain = Domains.Dev
+    private static let Route = Routes.Api
+    private static let BaseURL = Domain + Route
     
     struct ExchangeRate {
         var day: String
-        var Month: String
+        var month: String
         var year: String
         
         var url: String {
-            return BaseURL + "/exchangerateservice/Getfxrates/\(day)/\(Month)/\(year)/1/\(GBM.shared.getLanguage())"
+            return BaseURL + "/exchangerateservice/Getfxrates/\(day)/\(month)/\(year)/1/\(GBM.shared.getLanguage())"
         }
     }
 }

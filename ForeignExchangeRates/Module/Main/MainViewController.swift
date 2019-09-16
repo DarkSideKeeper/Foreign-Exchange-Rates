@@ -18,6 +18,10 @@ class MainViewController: UIViewController, MainViewProtocol {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var btnConvert: UIButton!
     
+    @IBOutlet var lbName: UILabel!
+    @IBOutlet var lbBuyPrice: UILabel!
+    @IBOutlet var lbSellPrice: UILabel!
+    
     var listRate: [ExchangeRatesModel] = [] {
         didSet {
             tableView.reloadData()
@@ -33,8 +37,14 @@ class MainViewController: UIViewController, MainViewProtocol {
     func setupView() {
         navigationBar.topItem?.title = "Text_Main_Title".localized
         
+        lbName.text = "Text_Currency".localized
+        lbBuyPrice.text = "Text_Buying".localized
+        lbSellPrice.text = "Text_Selling".localized
+        
         tableView.register(UINib(nibName: ExchangeRateCell.nibName, bundle: nil), forCellReuseIdentifier: ExchangeRateCell.identifier)
         tableView.tableFooterView = UIView()
+        
+        presenter?.getExchangeRates()
     }
     
     func updateView() {
@@ -64,12 +74,11 @@ class MainViewController: UIViewController, MainViewProtocol {
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return listRate.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExchangeRateCell.identifier) as! ExchangeRateCell
-        cell.imageIcon.backgroundColor = .red
         
         return cell
     }

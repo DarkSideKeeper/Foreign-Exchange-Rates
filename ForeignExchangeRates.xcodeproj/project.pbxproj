@@ -178,13 +178,13 @@
 		9C2C50E1232F3639007794D9 /* ForeignExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
-				9C29C3FB232F9B9C00939DB8 /* Model */,
-				9C29C392232F6F9600939DB8 /* Config */,
-				9C2C5114232F4276007794D9 /* Module */,
+				9C2C50EE232F363A007794D9 /* Info.plist */,
 				9C2C50E2232F3639007794D9 /* AppDelegate.swift */,
 				9C2C50E9232F363A007794D9 /* Assets.xcassets */,
 				9C2C50EB232F363A007794D9 /* LaunchScreen.storyboard */,
-				9C2C50EE232F363A007794D9 /* Info.plist */,
+				9C29C392232F6F9600939DB8 /* Config */,
+				9C29C3FB232F9B9C00939DB8 /* Model */,
+				9C2C5114232F4276007794D9 /* Module */,
 			);
 			path = ForeignExchangeRates;
 			sourceTree = "<group>";
