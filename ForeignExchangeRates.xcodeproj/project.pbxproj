@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5907DB3DEFED689E215E403C /* Pods_ForeignExchangeRatesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB74251D462B814E422150B /* Pods_ForeignExchangeRatesUITests.framework */; };
 		859934887CACCBFC11FE423E /* Pods_ForeignExchangeRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086484FE6F8DD623C5311384 /* Pods_ForeignExchangeRates.framework */; };
+		9C29C394232F6FF900939DB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C393232F6FF900939DB8 /* Constants.swift */; };
+		9C29C398232F723300939DB8 /* ExchangeRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C396232F723300939DB8 /* ExchangeRateCell.swift */; };
+		9C29C399232F723300939DB8 /* ExchangeRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C29C397232F723300939DB8 /* ExchangeRateCell.xib */; };
 		9C2C50E3232F3639007794D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C50E2232F3639007794D9 /* AppDelegate.swift */; };
 		9C2C50EA232F363A007794D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C50E9232F363A007794D9 /* Assets.xcassets */; };
 		9C2C50ED232F363A007794D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C50EB232F363A007794D9 /* LaunchScreen.storyboard */; };
@@ -47,6 +50,9 @@
 		1F2C9DD0390C8DB45E06483E /* Pods-ForeignExchangeRatesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRatesTests.release.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRatesTests/Pods-ForeignExchangeRatesTests.release.xcconfig"; sourceTree = "<group>"; };
 		32046351686A5389A556ABDA /* Pods-ForeignExchangeRatesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRatesUITests.release.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRatesUITests/Pods-ForeignExchangeRatesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		702706BE338147815D150A50 /* Pods-ForeignExchangeRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRates.release.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates.release.xcconfig"; sourceTree = "<group>"; };
+		9C29C393232F6FF900939DB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C29C396232F723300939DB8 /* ExchangeRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateCell.swift; sourceTree = "<group>"; };
+		9C29C397232F723300939DB8 /* ExchangeRateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRateCell.xib; sourceTree = "<group>"; };
 		9C2C50DF232F3639007794D9 /* ForeignExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeignExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2C50E2232F3639007794D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C2C50E9232F363A007794D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +115,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9C29C392232F6F9600939DB8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9C29C393232F6FF900939DB8 /* Constants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9C29C395232F720600939DB8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C29C396232F723300939DB8 /* ExchangeRateCell.swift */,
+				9C29C397232F723300939DB8 /* ExchangeRateCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9C2C50D6232F3639007794D9 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +158,7 @@
 		9C2C50E1232F3639007794D9 /* ForeignExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
+				9C29C392232F6F9600939DB8 /* Config */,
 				9C2C5114232F4276007794D9 /* Module */,
 				9C2C50E2232F3639007794D9 /* AppDelegate.swift */,
 				9C2C50E9232F363A007794D9 /* Assets.xcassets */,
@@ -173,6 +197,7 @@
 		9C2C5115232F4282007794D9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9C29C395232F720600939DB8 /* Cell */,
 				9C2C511A232F429B007794D9 /* MainInteractor.swift */,
 				9C2C5116232F429B007794D9 /* MainPresenter.swift */,
 				9C2C5119232F429B007794D9 /* MainProtocols.swift */,
@@ -306,6 +331,7 @@
 			files = (
 				9C2C50ED232F363A007794D9 /* LaunchScreen.storyboard in Resources */,
 				9C2C50EA232F363A007794D9 /* Assets.xcassets in Resources */,
+				9C29C399232F723300939DB8 /* ExchangeRateCell.xib in Resources */,
 				9C2C5113232F3A11007794D9 /* Podfile in Resources */,
 				9C2C5121232F429B007794D9 /* MainViewController.xib in Resources */,
 			);
@@ -418,10 +444,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C29C398232F723300939DB8 /* ExchangeRateCell.swift in Sources */,
 				9C2C50E3232F3639007794D9 /* AppDelegate.swift in Sources */,
 				9C2C511C232F429B007794D9 /* MainPresenter.swift in Sources */,
 				9C2C511D232F429B007794D9 /* MainRouter.swift in Sources */,
 				9C2C511F232F429B007794D9 /* MainProtocols.swift in Sources */,
+				9C29C394232F6FF900939DB8 /* Constants.swift in Sources */,
 				9C2C511E232F429B007794D9 /* MainViewController.swift in Sources */,
 				9C2C5120232F429B007794D9 /* MainInteractor.swift in Sources */,
 			);

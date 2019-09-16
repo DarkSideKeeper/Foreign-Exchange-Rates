@@ -14,8 +14,37 @@ class MainViewController: UIViewController, MainViewProtocol {
 
 	var presenter: MainPresenterProtocol?
 
-	override func viewDidLoad() {
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var btnConvert: UIButton!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupView()
     }
+    
+    func setupView() {
+        tableView.register(UINib(nibName: ExchangeRateCell.nibName, bundle: nil), forCellReuseIdentifier: ExchangeRateCell.identifier)
+        tableView.tableFooterView = UIView()
+    }
+    
+    @IBAction func clickBtnConvert(_ sender: Any) {
+        
+    }
+    
+}
 
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ExchangeRateCell.identifier) as! ExchangeRateCell
+        cell.backgroundColor = .red
+        
+        return cell
+    }
+    
+    
 }
