@@ -1,6 +1,7 @@
 # Foreign-Exchange-Rates
 
 == API Spec ==
+
 Endpoint:
 https://www.bangkokbank.com/api/exchangerateservice/Getfxrates/16/09/2019/1/th
 
