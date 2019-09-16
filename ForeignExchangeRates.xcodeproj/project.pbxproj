@@ -173,11 +173,11 @@
 		9C2C5115232F4282007794D9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9C2C511A232F429B007794D9 /* MainInteractor.swift */,
 				9C2C5116232F429B007794D9 /* MainPresenter.swift */,
+				9C2C5119232F429B007794D9 /* MainProtocols.swift */,
 				9C2C5117232F429B007794D9 /* MainRouter.swift */,
 				9C2C5118232F429B007794D9 /* MainViewController.swift */,
-				9C2C5119232F429B007794D9 /* MainProtocols.swift */,
-				9C2C511A232F429B007794D9 /* MainInteractor.swift */,
 				9C2C511B232F429B007794D9 /* MainViewController.xib */,
 			);
 			path = Main;
