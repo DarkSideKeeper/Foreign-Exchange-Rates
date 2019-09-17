@@ -79,6 +79,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExchangeRateCell.identifier) as! ExchangeRateCell
+        cell.setupCell(model: listRate[indexPath.row])
         
         return cell
     }

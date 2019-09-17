@@ -20,12 +20,9 @@ struct AppService {
     private static let BaseURL = Domain + Route
     
     struct ExchangeRate {
-        var day: String
-        var month: String
-        var year: String
-        
+        var date: String
         var url: String {
-            return BaseURL + "/exchangerateservice/Getfxrates/\(day)/\(month)/\(year)/1/\(GBM.shared.getLanguage())"
+            return BaseURL + "/exchangerateservice/Getfxrates/\(date)/1/\(GBM.shared.getLanguage())"
         }
     }
 }

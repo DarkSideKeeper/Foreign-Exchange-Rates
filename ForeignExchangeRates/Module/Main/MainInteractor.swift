@@ -16,7 +16,11 @@ class MainInteractor: MainInteractorInputProtocol {
     weak var presenter: MainInteractorOutputProtocol?
     
     func callApiExchangeRates() {
-        let service = AppService.ExchangeRate(day: "16", month: "09", year: "2019")
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        let dateString = formatter.string(from: date)
+        let service = AppService.ExchangeRate(date: dateString)
         let headers: HTTPHeaders = [
             "Ocp-Apim-Subscription-Key": "7d1b09abe2ea413cbf95b2d99782ed37"
         ]

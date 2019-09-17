@@ -28,4 +28,11 @@ class ExchangeRateCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setupCell(model: ExchangeRatesModel) {
+        imageIcon.image = UIImage(named: model.family ?? "icon_flag")
+        lbName.text = model.family
+        lbBuyPrice.text = model.buyingRates
+        lbSellPrice.text = model.sellingRates
+    }
 }

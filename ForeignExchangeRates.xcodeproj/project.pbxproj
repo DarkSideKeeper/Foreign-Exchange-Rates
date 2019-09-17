@@ -28,6 +28,45 @@
 		9C2C511F232F429B007794D9 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C5119232F429B007794D9 /* MainProtocols.swift */; };
 		9C2C5120232F429B007794D9 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C511A232F429B007794D9 /* MainInteractor.swift */; };
 		9C2C5121232F429B007794D9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C511B232F429B007794D9 /* MainViewController.xib */; };
+		9CEC37D62330DF80002E490B /* EUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C22330DF7F002E490B /* EUR.png */; };
+		9CEC37D72330DF80002E490B /* HKD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C32330DF7F002E490B /* HKD.png */; };
+		9CEC37D82330DF80002E490B /* JPY.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C42330DF7F002E490B /* JPY.png */; };
+		9CEC37D92330DF80002E490B /* KRW.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C52330DF7F002E490B /* KRW.png */; };
+		9CEC37DA2330DF80002E490B /* MMK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C62330DF80002E490B /* MMK.png */; };
+		9CEC37DB2330DF80002E490B /* AUD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C72330DF80002E490B /* AUD.png */; };
+		9CEC37DC2330DF80002E490B /* CAD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C82330DF80002E490B /* CAD.png */; };
+		9CEC37DD2330DF80002E490B /* NOK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C92330DF80002E490B /* NOK.png */; };
+		9CEC37DE2330DF80002E490B /* LAK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37CA2330DF80002E490B /* LAK.png */; };
+		9CEC37DF2330DF80002E490B /* AED.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37CB2330DF80002E490B /* AED.png */; };
+		9CEC37E02330DF80002E490B /* GBP.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37CC2330DF80002E490B /* GBP.png */; };
+		9CEC37E12330DF80002E490B /* BND.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37CD2330DF80002E490B /* BND.png */; };
+		9CEC37E22330DF80002E490B /* IDR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37CE2330DF80002E490B /* IDR.png */; };
+		9CEC37E32330DF80002E490B /* INR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37CF2330DF80002E490B /* INR.png */; };
+		9CEC37E42330DF80002E490B /* NZD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37D02330DF80002E490B /* NZD.png */; };
+		9CEC37E52330DF80002E490B /* MYR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37D12330DF80002E490B /* MYR.png */; };
+		9CEC37E62330DF80002E490B /* CNY.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37D22330DF80002E490B /* CNY.png */; };
+		9CEC37E72330DF80002E490B /* CHF.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37D32330DF80002E490B /* CHF.png */; };
+		9CEC37E82330DF80002E490B /* BHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37D42330DF80002E490B /* BHD.png */; };
+		9CEC37E92330DF80002E490B /* DKK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37D52330DF80002E490B /* DKK.png */; };
+		9CEC37ED2330DFFD002E490B /* USD5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37EA2330DFFC002E490B /* USD5.png */; };
+		9CEC37EE2330DFFD002E490B /* USD50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37EB2330DFFD002E490B /* USD50.png */; };
+		9CEC37EF2330DFFD002E490B /* USD1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37EC2330DFFD002E490B /* USD1.png */; };
+		9CEC37FA2330E0C9002E490B /* RUB.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F02330E0C8002E490B /* RUB.png */; };
+		9CEC37FB2330E0C9002E490B /* SEK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F12330E0C8002E490B /* SEK.png */; };
+		9CEC37FC2330E0C9002E490B /* VND.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F22330E0C8002E490B /* VND.png */; };
+		9CEC37FD2330E0C9002E490B /* OMR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F32330E0C8002E490B /* OMR.png */; };
+		9CEC37FE2330E0C9002E490B /* QAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F42330E0C8002E490B /* QAR.png */; };
+		9CEC37FF2330E0C9002E490B /* TWD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F52330E0C8002E490B /* TWD.png */; };
+		9CEC38002330E0C9002E490B /* PHP.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F62330E0C8002E490B /* PHP.png */; };
+		9CEC38012330E0C9002E490B /* SAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F72330E0C8002E490B /* SAR.png */; };
+		9CEC38022330E0C9002E490B /* ZAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F82330E0C8002E490B /* ZAR.png */; };
+		9CEC38032330E0C9002E490B /* SGD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37F92330E0C8002E490B /* SGD.png */; };
+		9CEC380B2330E213002E490B /* ConvertCurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38052330E213002E490B /* ConvertCurrencyPresenter.swift */; };
+		9CEC380C2330E213002E490B /* ConvertCurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38062330E213002E490B /* ConvertCurrencyRouter.swift */; };
+		9CEC380D2330E213002E490B /* ConvertCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38072330E213002E490B /* ConvertCurrencyViewController.swift */; };
+		9CEC380E2330E213002E490B /* ConvertCurrencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */; };
+		9CEC380F2330E213002E490B /* ConvertCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */; };
+		9CEC38102330E213002E490B /* ConvertCurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC380A2330E213002E490B /* ConvertCurrencyViewController.xib */; };
 		9DB15BD854E7F9090DC4393C /* Pods_ForeignExchangeRatesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC26FAC4A96D7ECDD7C0EDA1 /* Pods_ForeignExchangeRatesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +119,45 @@
 		9C2C5119232F429B007794D9 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
 		9C2C511A232F429B007794D9 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		9C2C511B232F429B007794D9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9CEC37C22330DF7F002E490B /* EUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EUR.png; sourceTree = "<group>"; };
+		9CEC37C32330DF7F002E490B /* HKD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HKD.png; sourceTree = "<group>"; };
+		9CEC37C42330DF7F002E490B /* JPY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JPY.png; sourceTree = "<group>"; };
+		9CEC37C52330DF7F002E490B /* KRW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KRW.png; sourceTree = "<group>"; };
+		9CEC37C62330DF80002E490B /* MMK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MMK.png; sourceTree = "<group>"; };
+		9CEC37C72330DF80002E490B /* AUD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUD.png; sourceTree = "<group>"; };
+		9CEC37C82330DF80002E490B /* CAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAD.png; sourceTree = "<group>"; };
+		9CEC37C92330DF80002E490B /* NOK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NOK.png; sourceTree = "<group>"; };
+		9CEC37CA2330DF80002E490B /* LAK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAK.png; sourceTree = "<group>"; };
+		9CEC37CB2330DF80002E490B /* AED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AED.png; sourceTree = "<group>"; };
+		9CEC37CC2330DF80002E490B /* GBP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GBP.png; sourceTree = "<group>"; };
+		9CEC37CD2330DF80002E490B /* BND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BND.png; sourceTree = "<group>"; };
+		9CEC37CE2330DF80002E490B /* IDR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDR.png; sourceTree = "<group>"; };
+		9CEC37CF2330DF80002E490B /* INR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INR.png; sourceTree = "<group>"; };
+		9CEC37D02330DF80002E490B /* NZD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NZD.png; sourceTree = "<group>"; };
+		9CEC37D12330DF80002E490B /* MYR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MYR.png; sourceTree = "<group>"; };
+		9CEC37D22330DF80002E490B /* CNY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CNY.png; sourceTree = "<group>"; };
+		9CEC37D32330DF80002E490B /* CHF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CHF.png; sourceTree = "<group>"; };
+		9CEC37D42330DF80002E490B /* BHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BHD.png; sourceTree = "<group>"; };
+		9CEC37D52330DF80002E490B /* DKK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DKK.png; sourceTree = "<group>"; };
+		9CEC37EA2330DFFC002E490B /* USD5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USD5.png; sourceTree = "<group>"; };
+		9CEC37EB2330DFFD002E490B /* USD50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USD50.png; sourceTree = "<group>"; };
+		9CEC37EC2330DFFD002E490B /* USD1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USD1.png; sourceTree = "<group>"; };
+		9CEC37F02330E0C8002E490B /* RUB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RUB.png; sourceTree = "<group>"; };
+		9CEC37F12330E0C8002E490B /* SEK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SEK.png; sourceTree = "<group>"; };
+		9CEC37F22330E0C8002E490B /* VND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VND.png; sourceTree = "<group>"; };
+		9CEC37F32330E0C8002E490B /* OMR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OMR.png; sourceTree = "<group>"; };
+		9CEC37F42330E0C8002E490B /* QAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QAR.png; sourceTree = "<group>"; };
+		9CEC37F52330E0C8002E490B /* TWD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TWD.png; sourceTree = "<group>"; };
+		9CEC37F62330E0C8002E490B /* PHP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PHP.png; sourceTree = "<group>"; };
+		9CEC37F72330E0C8002E490B /* SAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAR.png; sourceTree = "<group>"; };
+		9CEC37F82330E0C8002E490B /* ZAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZAR.png; sourceTree = "<group>"; };
+		9CEC37F92330E0C8002E490B /* SGD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SGD.png; sourceTree = "<group>"; };
+		9CEC38052330E213002E490B /* ConvertCurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyPresenter.swift; sourceTree = "<group>"; };
+		9CEC38062330E213002E490B /* ConvertCurrencyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyRouter.swift; sourceTree = "<group>"; };
+		9CEC38072330E213002E490B /* ConvertCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyViewController.swift; sourceTree = "<group>"; };
+		9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyProtocols.swift; sourceTree = "<group>"; };
+		9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyInteractor.swift; sourceTree = "<group>"; };
+		9CEC380A2330E213002E490B /* ConvertCurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConvertCurrencyViewController.xib; sourceTree = "<group>"; };
 		BC26FAC4A96D7ECDD7C0EDA1 /* Pods_ForeignExchangeRatesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeignExchangeRatesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB74251D462B814E422150B /* Pods_ForeignExchangeRatesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeignExchangeRatesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E9C3CA6842C4AF4002FFF7 /* Pods-ForeignExchangeRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRates.debug.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +256,7 @@
 		9C2C50E1232F3639007794D9 /* ForeignExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
+				9CEC37BD2330DD6A002E490B /* IconFlag */,
 				9C2C50EE232F363A007794D9 /* Info.plist */,
 				9C2C50E2232F3639007794D9 /* AppDelegate.swift */,
 				9C2C50E9232F363A007794D9 /* Assets.xcassets */,
@@ -211,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				9C2C5115232F4282007794D9 /* Main */,
+				9CEC38042330E1B3002E490B /* ConvertCurrency */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -227,6 +307,59 @@
 				9C2C511B232F429B007794D9 /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9CEC37BD2330DD6A002E490B /* IconFlag */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC37CB2330DF80002E490B /* AED.png */,
+				9CEC37C72330DF80002E490B /* AUD.png */,
+				9CEC37D42330DF80002E490B /* BHD.png */,
+				9CEC37CD2330DF80002E490B /* BND.png */,
+				9CEC37C82330DF80002E490B /* CAD.png */,
+				9CEC37D32330DF80002E490B /* CHF.png */,
+				9CEC37D22330DF80002E490B /* CNY.png */,
+				9CEC37D52330DF80002E490B /* DKK.png */,
+				9CEC37C22330DF7F002E490B /* EUR.png */,
+				9CEC37CC2330DF80002E490B /* GBP.png */,
+				9CEC37C32330DF7F002E490B /* HKD.png */,
+				9CEC37CE2330DF80002E490B /* IDR.png */,
+				9CEC37CF2330DF80002E490B /* INR.png */,
+				9CEC37C42330DF7F002E490B /* JPY.png */,
+				9CEC37C52330DF7F002E490B /* KRW.png */,
+				9CEC37CA2330DF80002E490B /* LAK.png */,
+				9CEC37C62330DF80002E490B /* MMK.png */,
+				9CEC37D12330DF80002E490B /* MYR.png */,
+				9CEC37C92330DF80002E490B /* NOK.png */,
+				9CEC37D02330DF80002E490B /* NZD.png */,
+				9CEC37F32330E0C8002E490B /* OMR.png */,
+				9CEC37F62330E0C8002E490B /* PHP.png */,
+				9CEC37F42330E0C8002E490B /* QAR.png */,
+				9CEC37F02330E0C8002E490B /* RUB.png */,
+				9CEC37F72330E0C8002E490B /* SAR.png */,
+				9CEC37F12330E0C8002E490B /* SEK.png */,
+				9CEC37F92330E0C8002E490B /* SGD.png */,
+				9CEC37F52330E0C8002E490B /* TWD.png */,
+				9CEC37EC2330DFFD002E490B /* USD1.png */,
+				9CEC37EA2330DFFC002E490B /* USD5.png */,
+				9CEC37EB2330DFFD002E490B /* USD50.png */,
+				9CEC37F22330E0C8002E490B /* VND.png */,
+				9CEC37F82330E0C8002E490B /* ZAR.png */,
+			);
+			path = IconFlag;
+			sourceTree = "<group>";
+		};
+		9CEC38042330E1B3002E490B /* ConvertCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC38052330E213002E490B /* ConvertCurrencyPresenter.swift */,
+				9CEC38062330E213002E490B /* ConvertCurrencyRouter.swift */,
+				9CEC38072330E213002E490B /* ConvertCurrencyViewController.swift */,
+				9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */,
+				9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */,
+				9CEC380A2330E213002E490B /* ConvertCurrencyViewController.xib */,
+			);
+			path = ConvertCurrency;
 			sourceTree = "<group>";
 		};
 		A6F0FF2CAE345FF78479F572 /* Pods */ = {
@@ -351,10 +484,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEC37ED2330DFFD002E490B /* USD5.png in Resources */,
+				9CEC37E82330DF80002E490B /* BHD.png in Resources */,
+				9CEC37FC2330E0C9002E490B /* VND.png in Resources */,
+				9CEC37DB2330DF80002E490B /* AUD.png in Resources */,
+				9CEC37E22330DF80002E490B /* IDR.png in Resources */,
+				9CEC37D92330DF80002E490B /* KRW.png in Resources */,
+				9CEC37E72330DF80002E490B /* CHF.png in Resources */,
+				9CEC37DA2330DF80002E490B /* MMK.png in Resources */,
 				9C2C50ED232F363A007794D9 /* LaunchScreen.storyboard in Resources */,
+				9CEC37DF2330DF80002E490B /* AED.png in Resources */,
+				9CEC37E92330DF80002E490B /* DKK.png in Resources */,
+				9CEC38022330E0C9002E490B /* ZAR.png in Resources */,
+				9CEC37D72330DF80002E490B /* HKD.png in Resources */,
+				9CEC37EF2330DFFD002E490B /* USD1.png in Resources */,
+				9CEC37E02330DF80002E490B /* GBP.png in Resources */,
+				9CEC37FE2330E0C9002E490B /* QAR.png in Resources */,
+				9CEC38012330E0C9002E490B /* SAR.png in Resources */,
+				9CEC37DC2330DF80002E490B /* CAD.png in Resources */,
 				9C29C3F2232F86C300939DB8 /* Localizable.strings in Resources */,
+				9CEC37D82330DF80002E490B /* JPY.png in Resources */,
+				9CEC38002330E0C9002E490B /* PHP.png in Resources */,
+				9CEC37FB2330E0C9002E490B /* SEK.png in Resources */,
+				9CEC37E32330DF80002E490B /* INR.png in Resources */,
+				9CEC38102330E213002E490B /* ConvertCurrencyViewController.xib in Resources */,
+				9CEC37E52330DF80002E490B /* MYR.png in Resources */,
+				9CEC37D62330DF80002E490B /* EUR.png in Resources */,
 				9C2C50EA232F363A007794D9 /* Assets.xcassets in Resources */,
+				9CEC37FF2330E0C9002E490B /* TWD.png in Resources */,
+				9CEC37E12330DF80002E490B /* BND.png in Resources */,
+				9CEC37DD2330DF80002E490B /* NOK.png in Resources */,
+				9CEC37FD2330E0C9002E490B /* OMR.png in Resources */,
+				9CEC38032330E0C9002E490B /* SGD.png in Resources */,
 				9C29C399232F723300939DB8 /* ExchangeRateCell.xib in Resources */,
+				9CEC37DE2330DF80002E490B /* LAK.png in Resources */,
+				9CEC37E42330DF80002E490B /* NZD.png in Resources */,
+				9CEC37E62330DF80002E490B /* CNY.png in Resources */,
+				9CEC37EE2330DFFD002E490B /* USD50.png in Resources */,
+				9CEC37FA2330E0C9002E490B /* RUB.png in Resources */,
 				9C2C5113232F3A11007794D9 /* Podfile in Resources */,
 				9C2C5121232F429B007794D9 /* MainViewController.xib in Resources */,
 			);
@@ -468,7 +635,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C29C398232F723300939DB8 /* ExchangeRateCell.swift in Sources */,
+				9CEC380F2330E213002E490B /* ConvertCurrencyInteractor.swift in Sources */,
 				9C29C3F8232F8AAE00939DB8 /* Extensions.swift in Sources */,
+				9CEC380E2330E213002E490B /* ConvertCurrencyProtocols.swift in Sources */,
 				9C2C50E3232F3639007794D9 /* AppDelegate.swift in Sources */,
 				9C2C511C232F429B007794D9 /* MainPresenter.swift in Sources */,
 				9C2C511D232F429B007794D9 /* MainRouter.swift in Sources */,
@@ -476,6 +645,9 @@
 				9C29C3FA232F913000939DB8 /* GlobalMethod.swift in Sources */,
 				9C2C511F232F429B007794D9 /* MainProtocols.swift in Sources */,
 				9C29C394232F6FF900939DB8 /* Constants.swift in Sources */,
+				9CEC380D2330E213002E490B /* ConvertCurrencyViewController.swift in Sources */,
+				9CEC380C2330E213002E490B /* ConvertCurrencyRouter.swift in Sources */,
+				9CEC380B2330E213002E490B /* ConvertCurrencyPresenter.swift in Sources */,
 				9C2C511E232F429B007794D9 /* MainViewController.swift in Sources */,
 				9C2C5120232F429B007794D9 /* MainInteractor.swift in Sources */,
 			);
