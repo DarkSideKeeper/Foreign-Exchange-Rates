@@ -352,11 +352,11 @@
 		9CEC38042330E1B3002E490B /* ConvertCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */,
 				9CEC38052330E213002E490B /* ConvertCurrencyPresenter.swift */,
+				9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */,
 				9CEC38062330E213002E490B /* ConvertCurrencyRouter.swift */,
 				9CEC38072330E213002E490B /* ConvertCurrencyViewController.swift */,
-				9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */,
-				9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */,
 				9CEC380A2330E213002E490B /* ConvertCurrencyViewController.xib */,
 			);
 			path = ConvertCurrency;

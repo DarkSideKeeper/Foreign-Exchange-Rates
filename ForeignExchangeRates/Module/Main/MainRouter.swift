@@ -28,7 +28,11 @@ class MainRouter: MainWireframeProtocol {
         return view
     }
     
-    func goToConvertView() {
-        
+    func goToConvertView(model: [ExchangeRatesModel]) {
+        let vc = ConvertCurrencyRouter.createModule(model: model)
+        let nav = UINavigationController(rootViewController: vc)
+        nav.isNavigationBarHidden = true
+        nav.modalPresentationStyle = .overFullScreen
+        viewController?.present(nav, animated: true, completion: nil)
     }
 }

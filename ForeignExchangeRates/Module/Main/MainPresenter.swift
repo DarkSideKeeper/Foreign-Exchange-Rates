@@ -22,8 +22,8 @@ class MainPresenter: MainPresenterProtocol {
         self.router = router
     }
 
-    func showConvertView() {
-        router.goToConvertView()
+    func showConvertView(model: [ExchangeRatesModel]) {
+        router.goToConvertView(model: model)
     }
     
     func getExchangeRates() {

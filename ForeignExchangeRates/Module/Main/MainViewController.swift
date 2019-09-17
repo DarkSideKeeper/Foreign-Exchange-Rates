@@ -21,7 +21,6 @@ class MainViewController: UIViewController, MainViewProtocol {
     @IBOutlet var lbName: UILabel!
     @IBOutlet var lbBuyPrice: UILabel!
     @IBOutlet var lbSellPrice: UILabel!
-
     
     var listRate: [ExchangeRatesModel] = [] {
         didSet {
@@ -65,7 +64,7 @@ class MainViewController: UIViewController, MainViewProtocol {
     }
     
     @IBAction func clickBtnConvert(_ sender: Any) {
-        presenter?.showConvertView()
+        presenter?.showConvertView(model: listRate)
     }
     
     @IBAction func clickChangeLanguage(_ sender: UIButton) {

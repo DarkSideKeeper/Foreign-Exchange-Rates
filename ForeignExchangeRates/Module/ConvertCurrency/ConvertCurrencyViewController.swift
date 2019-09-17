@@ -14,8 +14,34 @@ class ConvertCurrencyViewController: UIViewController, ConvertCurrencyViewProtoc
 
 	var presenter: ConvertCurrencyPresenterProtocol?
 
+    var listRate: [ExchangeRatesModel] = []
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func clickBtnCalculate(_ sender: Any) {
+        showAlertResult(data: 99)
+    }
+    
+    @IBAction func closeView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func showAlertResult(data: Int) {
+        let alert = UIAlertController(title: "0.97 USD1", message: "1 THB equals to 0.03 USD1", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+            case .cancel:
+                break
+            case .destructive:
+                break
+            @unknown default:
+                break
+            }}))
+        present(alert, animated: true, completion: nil)
     }
 
 }

@@ -12,14 +12,14 @@ import Foundation
 
 //MARK: Wireframe -
 protocol MainWireframeProtocol: class {
-    func goToConvertView()
+    func goToConvertView(model: [ExchangeRatesModel])
 }
 //MARK: Presenter -
 protocol MainPresenterProtocol: class {
 
     var interactor: MainInteractorInputProtocol? { get set }
     
-    func showConvertView()
+    func showConvertView(model: [ExchangeRatesModel])
     func getExchangeRates()
 }
 

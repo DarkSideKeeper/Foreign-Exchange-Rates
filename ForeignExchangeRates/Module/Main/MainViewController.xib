@@ -57,7 +57,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="0pH-R3-GQO"/>
                     </constraints>
-                    <state key="normal" title="Label"/>
+                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="clickBtnConvert:" destination="-1" eventType="touchUpInside" id="GUt-lP-RyZ"/>
                     </connections>

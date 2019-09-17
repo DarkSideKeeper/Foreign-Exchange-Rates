@@ -14,7 +14,7 @@ class ConvertCurrencyRouter: ConvertCurrencyWireframeProtocol {
 
     weak var viewController: UIViewController?
 
-    static func createModule() -> UIViewController {
+    static func createModule(model: [ExchangeRatesModel]) -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = ConvertCurrencyViewController(nibName: nil, bundle: nil)
         let interactor = ConvertCurrencyInteractor()
@@ -24,6 +24,8 @@ class ConvertCurrencyRouter: ConvertCurrencyWireframeProtocol {
         view.presenter = presenter
         interactor.presenter = presenter
         router.viewController = view
+        
+        view.listRate = model
 
         return view
     }
