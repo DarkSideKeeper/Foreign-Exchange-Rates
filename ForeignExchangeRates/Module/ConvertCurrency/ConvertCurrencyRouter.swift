@@ -25,7 +25,7 @@ class ConvertCurrencyRouter: ConvertCurrencyWireframeProtocol {
         interactor.presenter = presenter
         router.viewController = view
         
-        view.listRate = model
+        presenter.listRate = model
 
         return view
     }

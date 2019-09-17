@@ -13,11 +13,22 @@ import UIKit
 class ConvertCurrencyViewController: UIViewController, ConvertCurrencyViewProtocol {
 
 	var presenter: ConvertCurrencyPresenterProtocol?
-
-    var listRate: [ExchangeRatesModel] = []
+    
+    @IBOutlet var pickerCurrentCurrency: UIPickerView!
+    @IBOutlet var pickerToCurrency: UIPickerView!
+    @IBOutlet var textFieldAmount: UITextField!
     
 	override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupView()
+    }
+    
+    func setupView() {
+        pickerCurrentCurrency.delegate = self
+        pickerCurrentCurrency.dataSource = self
+        pickerToCurrency.delegate = self
+        pickerToCurrency.dataSource = self
     }
     
     @IBAction func clickBtnCalculate(_ sender: Any) {
@@ -44,4 +55,27 @@ class ConvertCurrencyViewController: UIViewController, ConvertCurrencyViewProtoc
         present(alert, animated: true, completion: nil)
     }
 
+}
+
+extension ConvertCurrencyViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return presenter?.getListRates().count ?? 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        guard let list = presenter?.getListRates() else { return nil }
+        return list[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == pickerCurrentCurrency {
+            
+        } else {
+            
+        }
+    }
 }

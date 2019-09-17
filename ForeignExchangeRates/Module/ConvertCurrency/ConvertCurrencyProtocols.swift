@@ -18,6 +18,8 @@ protocol ConvertCurrencyWireframeProtocol: class {
 protocol ConvertCurrencyPresenterProtocol: class {
 
     var interactor: ConvertCurrencyInteractorInputProtocol? { get set }
+    
+    func getListRates() -> [String]
 }
 
 //MARK: Interactor -

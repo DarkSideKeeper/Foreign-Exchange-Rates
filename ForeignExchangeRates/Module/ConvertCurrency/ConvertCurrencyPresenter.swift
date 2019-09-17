@@ -15,6 +15,8 @@ class ConvertCurrencyPresenter: ConvertCurrencyPresenterProtocol, ConvertCurrenc
     weak private var view: ConvertCurrencyViewProtocol?
     var interactor: ConvertCurrencyInteractorInputProtocol?
     private let router: ConvertCurrencyWireframeProtocol
+    
+    var listRate: [ExchangeRatesModel] = []
 
     init(interface: ConvertCurrencyViewProtocol, interactor: ConvertCurrencyInteractorInputProtocol?, router: ConvertCurrencyWireframeProtocol) {
         self.view = interface
@@ -22,4 +24,8 @@ class ConvertCurrencyPresenter: ConvertCurrencyPresenterProtocol, ConvertCurrenc
         self.router = router
     }
 
+    func getListRates() -> [String] {
+        let list = listRate.compactMap({$0.family})
+        return list
+    }
 }

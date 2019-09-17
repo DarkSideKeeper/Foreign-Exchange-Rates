@@ -41,12 +41,7 @@ class MainViewController: UIViewController, MainViewProtocol {
         lbBuyPrice.text = "Text_Buying".localized
         lbSellPrice.text = "Text_Selling".localized
         btnConvert.setTitle("Btn_Currency_Calculator".localized, for: .normal)
-        
-        if GBM.shared.getLanguage() == .en {
-            btnLanguage.setImage(UIImage(named: "icon_th"), for: .normal)
-        } else {
-            btnLanguage.setImage(UIImage(named: "icon_us"), for: .normal)
-        }
+        btnLanguage.setImage(UIImage(named: GBM.shared.getLanguage() == .en ? "icon_th" : "icon_us"), for: .normal)
         
         tableView.register(UINib(nibName: ExchangeRateCell.nibName, bundle: nil), forCellReuseIdentifier: ExchangeRateCell.identifier)
         tableView.tableFooterView = UIView()
@@ -69,10 +64,8 @@ class MainViewController: UIViewController, MainViewProtocol {
     
     @IBAction func clickChangeLanguage(_ sender: UIButton) {
         if GBM.shared.getLanguage() == .en {
-            sender.setImage(UIImage(named: "icon_th"), for: .normal)
             GBM.shared.setLanguage(language: .th)
         } else {
-            sender.setImage(UIImage(named: "icon_us"), for: .normal)
             GBM.shared.setLanguage(language: .en)
         }
         updateView()
