@@ -2,8 +2,10 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'ForeignExchangeRates' do
+    
     pod 'Alamofire', '~> 4.9.0'
-
+    pod 'Charts'
+    
     target 'ForeignExchangeRatesTests' do
     inherit! :search_paths
     # Pods for testing

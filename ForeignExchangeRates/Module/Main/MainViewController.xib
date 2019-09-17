@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="btnConvert" destination="Jj6-Ml-IXu" id="IeE-L8-IUP"/>
+                <outlet property="btnLanguage" destination="boa-rh-9j5" id="qKb-Pg-iBj"/>
                 <outlet property="lbBuyPrice" destination="69h-El-vr1" id="Tr5-S3-vDc"/>
                 <outlet property="lbName" destination="plY-1L-TLG" id="HFV-5E-on5"/>
                 <outlet property="lbSellPrice" destination="PUN-tO-VMN" id="7yu-Uc-1JI"/>
@@ -56,7 +57,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="0pH-R3-GQO"/>
                     </constraints>
-                    <state key="normal" title="Convert Exchange Rate"/>
+                    <state key="normal" title="Label"/>
                     <connections>
                         <action selector="clickBtnConvert:" destination="-1" eventType="touchUpInside" id="GUt-lP-RyZ"/>
                     </connections>

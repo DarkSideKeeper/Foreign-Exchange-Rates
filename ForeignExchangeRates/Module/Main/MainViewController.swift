@@ -17,10 +17,11 @@ class MainViewController: UIViewController, MainViewProtocol {
     @IBOutlet var navigationBar: UINavigationBar!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var btnConvert: UIButton!
-    
+    @IBOutlet var btnLanguage: UIButton!
     @IBOutlet var lbName: UILabel!
     @IBOutlet var lbBuyPrice: UILabel!
     @IBOutlet var lbSellPrice: UILabel!
+
     
     var listRate: [ExchangeRatesModel] = [] {
         didSet {
@@ -40,6 +41,13 @@ class MainViewController: UIViewController, MainViewProtocol {
         lbName.text = "Text_Currency".localized
         lbBuyPrice.text = "Text_Buying".localized
         lbSellPrice.text = "Text_Selling".localized
+        btnConvert.setTitle("Btn_Currency_Calculator".localized, for: .normal)
+        
+        if GBM.shared.getLanguage() == .en {
+            btnLanguage.setImage(UIImage(named: "icon_th"), for: .normal)
+        } else {
+            btnLanguage.setImage(UIImage(named: "icon_us"), for: .normal)
+        }
         
         tableView.register(UINib(nibName: ExchangeRateCell.nibName, bundle: nil), forCellReuseIdentifier: ExchangeRateCell.identifier)
         tableView.tableFooterView = UIView()
