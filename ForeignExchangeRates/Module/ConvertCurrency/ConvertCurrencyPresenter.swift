@@ -24,8 +24,12 @@ class ConvertCurrencyPresenter: ConvertCurrencyPresenterProtocol, ConvertCurrenc
         self.router = router
     }
 
-    func getListRates() -> [String] {
+    func getListRate() -> [String] {
         let list = listRate.compactMap({$0.family})
         return list
+    }
+    
+    func getRate(index: Int) -> ExchangeRatesModel {
+        return listRate[index]
     }
 }

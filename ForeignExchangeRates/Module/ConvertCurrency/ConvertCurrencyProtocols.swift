@@ -19,7 +19,8 @@ protocol ConvertCurrencyPresenterProtocol: class {
 
     var interactor: ConvertCurrencyInteractorInputProtocol? { get set }
     
-    func getListRates() -> [String]
+    func getListRate() -> [String]
+    func getRate(index: Int) -> ExchangeRatesModel
 }
 
 //MARK: Interactor -
