@@ -9,4 +9,6 @@
 "Text_Currency" = "สกุลเงิน";
 "Text_Buying" = "ราคารับซื้อ";
 "Text_Selling" = "ราคาขาย";
+"Text_Calculator" = "คำนวน";
+
 "Btn_Currency_Calculator" = "เครื่องคำนวณสกุลเงิน";

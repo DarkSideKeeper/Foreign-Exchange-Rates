@@ -17,6 +17,7 @@ class ConvertCurrencyViewController: UIViewController, ConvertCurrencyViewProtoc
     @IBOutlet var pickerCurrentCurrency: UIPickerView!
     @IBOutlet var pickerToCurrency: UIPickerView!
     @IBOutlet var textFieldAmount: UITextField!
+    @IBOutlet var buttonCalculator: UIButton!
     
     private var currentCurrencyValue: ExchangeRatesModel!
     private var toCurrencyValue: ExchangeRatesModel!
@@ -35,6 +36,8 @@ class ConvertCurrencyViewController: UIViewController, ConvertCurrencyViewProtoc
         
         currentCurrencyValue = presenter?.getRate(index: 0)
         toCurrencyValue = presenter?.getRate(index: 0)
+        
+        buttonCalculator.setTitle("Text_Calculator".localized, for: .normal)
     }
     
     @IBAction func clickBtnCalculate(_ sender: Any) {
