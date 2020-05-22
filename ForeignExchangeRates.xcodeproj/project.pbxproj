@@ -28,6 +28,7 @@
 		9C2C511F232F429B007794D9 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C5119232F429B007794D9 /* MainProtocols.swift */; };
 		9C2C5120232F429B007794D9 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C511A232F429B007794D9 /* MainInteractor.swift */; };
 		9C2C5121232F429B007794D9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C511B232F429B007794D9 /* MainViewController.xib */; };
+		9CDB64BA24765C910025D6EC /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB64B924765C910025D6EC /* MainTests.swift */; };
 		9CEC37D62330DF80002E490B /* EUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C22330DF7F002E490B /* EUR.png */; };
 		9CEC37D72330DF80002E490B /* HKD.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C32330DF7F002E490B /* HKD.png */; };
 		9CEC37D82330DF80002E490B /* JPY.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC37C42330DF7F002E490B /* JPY.png */; };
@@ -119,6 +120,7 @@
 		9C2C5119232F429B007794D9 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
 		9C2C511A232F429B007794D9 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		9C2C511B232F429B007794D9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9CDB64B924765C910025D6EC /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		9CEC37C22330DF7F002E490B /* EUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EUR.png; sourceTree = "<group>"; };
 		9CEC37C32330DF7F002E490B /* HKD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HKD.png; sourceTree = "<group>"; };
 		9CEC37C42330DF7F002E490B /* JPY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JPY.png; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		9C2C5115232F4282007794D9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9CDB64B824765C6C0025D6EC /* Tests */,
 				9C29C395232F720600939DB8 /* Cell */,
 				9C2C511A232F429B007794D9 /* MainInteractor.swift */,
 				9C2C5116232F429B007794D9 /* MainPresenter.swift */,
@@ -307,6 +310,14 @@
 				9C2C511B232F429B007794D9 /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9CDB64B824765C6C0025D6EC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB64B924765C910025D6EC /* MainTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		9CEC37BD2330DD6A002E490B /* IconFlag */ = {
@@ -657,6 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDB64BA24765C910025D6EC /* MainTests.swift in Sources */,
 				9C2C50F8232F363A007794D9 /* ForeignExchangeRatesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ DEPENDENCIES:
   - Charts
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Charts
 
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 5fef640d70098d5a90585cd796a326009df79607
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1
