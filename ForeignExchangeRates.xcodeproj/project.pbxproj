@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5907DB3DEFED689E215E403C /* Pods_ForeignExchangeRatesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB74251D462B814E422150B /* Pods_ForeignExchangeRatesUITests.framework */; };
-		859934887CACCBFC11FE423E /* Pods_ForeignExchangeRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086484FE6F8DD623C5311384 /* Pods_ForeignExchangeRates.framework */; };
+		17E455B63A9EF46DA8CF9AF5 /* libPods-ForeignExchangeRatesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA622174DB75E651E5781E5C /* libPods-ForeignExchangeRatesUITests.a */; };
+		920D075F3E120715C0F39B0F /* libPods-ForeignExchangeRatesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F783DBBB874CE4D6B6A36D /* libPods-ForeignExchangeRatesTests.a */; };
 		9C29C394232F6FF900939DB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C393232F6FF900939DB8 /* Constants.swift */; };
 		9C29C398232F723300939DB8 /* ExchangeRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29C396232F723300939DB8 /* ExchangeRateCell.swift */; };
 		9C29C399232F723300939DB8 /* ExchangeRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C29C397232F723300939DB8 /* ExchangeRateCell.xib */; };
@@ -68,7 +68,7 @@
 		9CEC380E2330E213002E490B /* ConvertCurrencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */; };
 		9CEC380F2330E213002E490B /* ConvertCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */; };
 		9CEC38102330E213002E490B /* ConvertCurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC380A2330E213002E490B /* ConvertCurrencyViewController.xib */; };
-		9DB15BD854E7F9090DC4393C /* Pods_ForeignExchangeRatesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC26FAC4A96D7ECDD7C0EDA1 /* Pods_ForeignExchangeRatesTests.framework */; };
+		BE95B9658EABF5AE0B1F2AC9 /* libPods-ForeignExchangeRates.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A755485E6DC6E9D3C999D /* libPods-ForeignExchangeRates.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,10 +89,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020A755485E6DC6E9D3C999D /* libPods-ForeignExchangeRates.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForeignExchangeRates.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04553E22722493B678E938C7 /* Pods-ForeignExchangeRatesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRatesTests.debug.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRatesTests/Pods-ForeignExchangeRatesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		086484FE6F8DD623C5311384 /* Pods_ForeignExchangeRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeignExchangeRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2C9DD0390C8DB45E06483E /* Pods-ForeignExchangeRatesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRatesTests.release.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRatesTests/Pods-ForeignExchangeRatesTests.release.xcconfig"; sourceTree = "<group>"; };
 		32046351686A5389A556ABDA /* Pods-ForeignExchangeRatesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRatesUITests.release.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRatesUITests/Pods-ForeignExchangeRatesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49F783DBBB874CE4D6B6A36D /* libPods-ForeignExchangeRatesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForeignExchangeRatesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		702706BE338147815D150A50 /* Pods-ForeignExchangeRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRates.release.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates.release.xcconfig"; sourceTree = "<group>"; };
 		9C29C393232F6FF900939DB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9C29C396232F723300939DB8 /* ExchangeRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateCell.swift; sourceTree = "<group>"; };
@@ -160,8 +161,7 @@
 		9CEC38082330E213002E490B /* ConvertCurrencyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyProtocols.swift; sourceTree = "<group>"; };
 		9CEC38092330E213002E490B /* ConvertCurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCurrencyInteractor.swift; sourceTree = "<group>"; };
 		9CEC380A2330E213002E490B /* ConvertCurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConvertCurrencyViewController.xib; sourceTree = "<group>"; };
-		BC26FAC4A96D7ECDD7C0EDA1 /* Pods_ForeignExchangeRatesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeignExchangeRatesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCB74251D462B814E422150B /* Pods_ForeignExchangeRatesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeignExchangeRatesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA622174DB75E651E5781E5C /* libPods-ForeignExchangeRatesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForeignExchangeRatesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E9C3CA6842C4AF4002FFF7 /* Pods-ForeignExchangeRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRates.debug.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0EE0C088BCBFC4C4AD0AF3 /* Pods-ForeignExchangeRatesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeignExchangeRatesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ForeignExchangeRatesUITests/Pods-ForeignExchangeRatesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,7 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859934887CACCBFC11FE423E /* Pods_ForeignExchangeRates.framework in Frameworks */,
+				BE95B9658EABF5AE0B1F2AC9 /* libPods-ForeignExchangeRates.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB15BD854E7F9090DC4393C /* Pods_ForeignExchangeRatesTests.framework in Frameworks */,
+				920D075F3E120715C0F39B0F /* libPods-ForeignExchangeRatesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5907DB3DEFED689E215E403C /* Pods_ForeignExchangeRatesUITests.framework in Frameworks */,
+				17E455B63A9EF46DA8CF9AF5 /* libPods-ForeignExchangeRatesUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,9 +197,9 @@
 		325EBAC2203F4F6EA9FB58CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				086484FE6F8DD623C5311384 /* Pods_ForeignExchangeRates.framework */,
-				BC26FAC4A96D7ECDD7C0EDA1 /* Pods_ForeignExchangeRatesTests.framework */,
-				BCB74251D462B814E422150B /* Pods_ForeignExchangeRatesUITests.framework */,
+				020A755485E6DC6E9D3C999D /* libPods-ForeignExchangeRates.a */,
+				49F783DBBB874CE4D6B6A36D /* libPods-ForeignExchangeRatesTests.a */,
+				BA622174DB75E651E5781E5C /* libPods-ForeignExchangeRatesUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -397,7 +397,6 @@
 				9C2C50DB232F3639007794D9 /* Sources */,
 				9C2C50DC232F3639007794D9 /* Frameworks */,
 				9C2C50DD232F3639007794D9 /* Resources */,
-				043F3B7876923EBF3A01DC73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -555,23 +554,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		043F3B7876923EBF3A01DC73 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForeignExchangeRates/Pods-ForeignExchangeRates-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		274A95A2FE777291324BB041 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
